@@ -3,59 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazzy Churro | Churrería en Torrevieja</title>
-    <meta name="description" content="Los mejores churros artesanos de Torrevieja. Chocolate espeso, lazos con toppings y desayunos inolvidables.">
+    <title>Crazzy Churro | Churrería y Chocolatería en Torrevieja</title>
+    <meta name="description" content="Descubre Crazzy Churro en Torrevieja. Desayunos artesanales, chocolate con churros y los toppings más locos de la ciudad.">
     
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="container">
-            <div class="logo">Crazzy<span>Churro</span></div>
-            <ul>
+            <div class="logo">CRAZZY<span>CHURRO</span></div>
+
+            <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#carta">La Carta</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#carta">Carta</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+
+            <div class="header-action">
+                <a href="tel:+34600000000" class="nav-btn">Llamar Ahora</a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>Churrería Tradicional en Torrevieja</h1>
-                <p>Crujientes, dorados y hechos con amor cada mañana.</p>
-                <a href="#contacto" class="btn-primary">Ver ubicación</a>
-            </div>
-        </section>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Crazzy Churro Torrevieja</h1>
+            <p>Los churros más famosos y locos de la ciudad.</p>
+            <a href="https://share.google/9ApaW9PJvZsYBaYFd" target="_blank" class="btn-cta">Cómo llegar ahora</a>
+        </div>
+    </section>
 
-        <section id="carta" class="container">
-            <h2 class="section-title">Nuestras Especialidades</h2>
-            <div class="grid">
-                <article class="card">
-                    <h3>Churros Artesanos</h3>
-                    <p>La receta clásica que nunca falla en el desayuno.</p>
+    <section id="nosotros" class="container section">
+        <div class="split">
+            <div class="text">
+                <span class="subtitle">Nuestra Historia</span>
+                <h2>Más de 10 años endulzando mañanas</h2>
+                <p>En Crazzy Churro no solo hacemos churros, creamos momentos. Al igual que los mejores restaurantes de Torrevieja, apostamos por la calidad del producto y el trato cercano.</p>
+                <p>Nuestra masa es artesanal, hecha cada día para garantizar ese crujido perfecto que nos define.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/500x350" alt="Local Crazzy Churro Torrevieja">
+            </div>
+        </div>
+    </section>
+
+    <section id="carta" class="bg-light section">
+        <div class="container">
+            <h2 class="center">Nuestras Delicias</h2>
+            <div class="grid-carta">
+                <article class="item">
+                    <img src="https://via.placeholder.com/300" alt="Churros de lazo artesanos">
+                    <h3>Churros de Lazo</h3>
+                    <p>La estrella de la casa, siempre crujientes.</p>
                 </article>
-                <article class="card">
-                    <h3>Chocolate a la taza</h3>
-                    <p>Espeso, caliente y perfecto para mojar.</p>
+                <article class="item">
+                    <img src="https://via.placeholder.com/300" alt="Chocolate a la taza espeso">
+                    <h3>Chocolate Artesano</h3>
+                    <p>Receta tradicional, espeso y delicioso.</p>
                 </article>
-                <article class="card">
+                <article class="item">
+                    <img src="https://via.placeholder.com/300" alt="Churros con toppings Oreo Kinder">
                     <h3>Crazzy Toppings</h3>
-                    <p>Dale un toque de locura con Oreo, Kinder o Nutella.</p>
+                    <p>Personaliza con Oreo, Kinder o Nutella.</p>
                 </article>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="container section">
+        <h2 class="center">Lo que dicen de nosotros</h2>
+        <div class="center">
+            <blockquote style="font-size: 1.2rem; font-style: italic;">"Los mejores churros de Torrevieja, sin duda. El chocolate está espectacular."</blockquote>
+            <p style="margin-top: 10px; font-weight: bold;">- Juan Pérez</p>
+        </div>
+    </section>
 
     <footer id="contacto">
-        <div class="container">
-            <p><strong>Crazzy Churro Torrevieja</strong></p>
-            <p>Calle del Sabor, 10 - Torrevieja</p>
-            <p>SÍGUENOS: <a href="https://www.instagram.com/crazzy_churro/">@crazzy_churro</a></p>
+        <div class="container footer-grid">
+            <div>
+                <h3>CRAZZY CHURRO</h3>
+                <p>C/ Pedro Lorca, Torrevieja</p>
+                <p>Tel: 600 000 000</p>
+            </div>
+            <div>
+                <h3>Horario</h3>
+                <p>Lunes a Domingo</p>
+                <p>07:00 - 13:00</p>
+            </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
