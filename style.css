@@ -1,0 +1,132 @@
+/* VARIABLES DE COLOR - Estilo Crazzy Churro */
+:root {
+    --chocolate: #3d2b1f;
+    --dorado: #d4a373;
+    --crema: #fefae0;
+    --acento: #e63946; /* Color para llamar la atención en botones */
+}
+
+/* RESET BÁSICO - Para que se vea igual en todos los móviles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--crema);
+    color: var(--chocolate);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* NAVEGACIÓN - Similar a la web de referencia */
+header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--chocolate);
+}
+
+.logo span {
+    color: var(--dorado);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--chocolate);
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+/* HERO SECTION - La primera impresión (SEO UX) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600'); /* Aquí pondrás tu foto de la churrería */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--acento);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* GRID DE PRODUCTOS */
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE - Para que se vea perfecto en móviles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+}
