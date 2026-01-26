@@ -1,5 +1,4 @@
-
-// Cuando el usuario hace scroll hacia abajo, el menú cambia de estilo
+// 1. HEADER PEGAJOSO
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -9,11 +8,8 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-// Hace que las secciones aparezcan suavemente al bajar
-const observerOptions = {
-    threshold: 0.1
-};
+// 2. ANIMACIÓN DE APARICIÓN
+const observerOptions = { threshold: 0.1 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -23,8 +19,13 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Aplicamos la animación a todas las secciones
-document.querySelectorAll('section').forEach(section => {
-    section.classList.add('fade-in');
-    observer.observe(section);
+document.querySelectorAll('section, article.item, .review-card').forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
 });
+
+// 3. AÑO AUTOMÁTICO FOOTER
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}

@@ -3,104 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazy Churro | Churrería y Chocolatería en Torrevieja</title>
-    <meta name="description" content="Descubre Crazy Churro en Torrevieja. Desayunos artesanales, chocolate con churros y los toppings más locos de la ciudad.">
+    
+    <title>Churrería en Torrevieja | Crazy Churro - Chocolate y Desayunos</title>
+    <meta name="description" content="¿Buscas la mejor churrería en Torrevieja? Crazy Churro ofrece churros artesanos, porras crujientes y chocolate caliente. Desayunos épicos en C/ Félix Rodríguez de la Fuente.">
+    
+    <link rel="canonical" href="https://joaquin-chimeno.github.io/CrazzyChurro/">
+    
+    <meta property="og:title" content="Crazy Churro - Los Churros más locos de Torrevieja">
+    <meta property="og:image" content="img/churro_skate.png">
     
     <link rel="stylesheet" href="style.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;800&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Crazy Churro",
+      "image": "https://joaquin-chimeno.github.io/CrazzyChurro/img/LogoSinFondo.png",
+      "@id": "https://joaquin-chimeno.github.io/CrazzyChurro",
+      "url": "https://joaquin-chimeno.github.io/CrazzyChurro",
+      "telephone": "+34622219321",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C. Félix Rodríguez de la Fuente, 3",
+        "addressLocality": "Torrevieja",
+        "addressRegion": "Alicante",
+        "postalCode": "03182",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.9787,
+        "longitude": -0.6822
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "07:30",
+        "closes": "00:00"
+      },
+      "menu": "https://joaquin-chimeno.github.io/CrazzyChurro/#carta",
+      "priceRange": "€"
+    }
+    </script>
 </head>
 <body>
 
     <header>
         <nav class="container">
-        <a href="#inicio" class="logo-container">
-    <img src="img/LogoSinFondo.png" alt="Logotipo Crazy Churro Torrevieja" class="logo-img">
-    
-    <div class="logo-text">
-        CRAZY<span>CHURRO</span>
-    </div>
-</a>
+            <a href="index.html" class="logo-container">
+                <img src="img/LogoSinFondo.png" alt="Logotipo Crazy Churro Torrevieja" class="logo-img">
+                <div class="logo-text">CRAZY<span>CHURRO</span></div>
+            </a>
 
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="#carta">Carta</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="header-action">
-                <a href="tel:+34622219321" class="nav-btn">Reserva Ahora</a>
+                <a href="tel:+34622219321" class="nav-btn">Llamar Ahora</a>
             </div>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Crazy Churro Torrevieja</h1>
-            <p>Los churros más locos de la ciudad.</p>
-            <a href="https://maps.app.goo.gl/RekkMWNdA7e7VSRBA" target="_blank" class="btn-cta">Cómo llegar ahora</a>
-        </div>
-    </section>
-
-    <section id="nosotros" class="container section">
-        <div class="split">
-            <div class="text">
-                <span class="subtitle">Nuestra Historia</span>
-                <h2>Todos los días endulzando tus mañanas</h2>
-                <p>En Crazy Churro no solo hacemos churros, creamos momentos. Al igual que los mejores restaurantes de Torrevieja, apostamos por la calidad del producto y el trato cercano.</p>
-                <p>Nuestra masa es artesanal, hecha cada día para garantizar ese crujido perfecto que nos define y ese sabor único que nos diferencia.</p>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>La Churrería más Loca de Torrevieja</h1>
+                <p>Churros artesanos, porras crujientes y chocolate caliente.</p>
+                <a href="https://maps.google.com/?q=Crazy+Churro+Torrevieja" target="_blank" class="btn-cta">Cómo llegar</a>
             </div>
-            <div class="image">
-                <img src="img/FotoLocal.jpg" alt="Local Crazy Churro Torrevieja">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="carta" class="bg-light section">
-        <div class="container">
-            <h2 class="center">Nuestras Delicias</h2>
-            <div class="grid-carta">
-                <article class="item">
-                    <img src="https://via.placeholder.com/300" alt="Churros de lazo artesanos">
-                    <h3>Churros de Lazo</h3>
-                    <p>La estrella de la casa, siempre crujientes.</p>
-                </article>
-                <article class="item">
-                    <img src="/img/FotoPrueba1.png" alt="Chocolate a la taza espeso">
-                    <h3>Chocolate Artesano</h3>
-                    <p>Receta tradicional, espeso y delicioso.</p>
-                </article>
-                <article class="item">
-                    <img src="https://via.placeholder.com/300" alt="Churros con toppings Oreo Kinder">
-                    <h3>Crazy Toppings</h3>
-                    <p>Personaliza con Oreo, Kinder o Nutella.</p>
-                </article>
+        <section class="container section">
+            <div class="split">
+                <div class="text">
+                    <span class="subtitle">Tradición y Sabor</span>
+                    <h2>Desayunos artesanos en el corazón de Torrevieja</h2>
+                    <p>En <strong>Crazy Churro</strong> apostamos por la masa fresca hecha al momento. ¿Buscas porras gigantes o los clásicos lazos? Nuestra receta garantiza ese crujido perfecto.</p>
+                    <br>
+                    <a href="nosotros.html" style="color: var(--rojo-crazy); font-weight: bold;">Leer nuestra historia →</a>
+                </div>
+                <div class="image">
+                    <img src="img/FotoLocal.jpg" alt="Interior de la churrería Crazy Churro" loading="lazy">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container section">
-        <h2 class="center">Lo que dicen de nosotros</h2>
-        <div class="center">
-            <blockquote style="font-size: 1.2rem; font-style: italic;">"Los mejores churros de Torrevieja, sin duda. El chocolate está espectacular."</blockquote>
-            <p style="margin-top: 10px; font-weight: bold;">- Juan Pérez</p>
-        </div>
-    </section>
+        <section id="carta" class="bg-light section">
+            <div class="container">
+                <h2 class="center">Nuestro Menú Delicioso</h2>
+                <div class="grid-carta">
+                    <article class="item">
+                        <img src="img/churro_lazo.jpg" alt="Churros de lazo artesanos" loading="lazy">
+                        <h3>Churros de Lazo</h3>
+                        <p>La estrella de la casa, siempre crujientes.</p>
+                    </article>
+                    <article class="item">
+                        <img src="img/chocolate.jpg" alt="Chocolate a la taza espeso" loading="lazy">
+                        <h3>Chocolate Artesano</h3>
+                        <p>Receta tradicional, espeso y delicioso.</p>
+                    </article>
+                    <article class="item">
+                        <img src="img/toppings.jpg" alt="Churros con toppings Oreo y Kinder" loading="lazy">
+                        <h3>Crazy Toppings</h3>
+                        <p>Personaliza con Oreo, Kinder o Nutella.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2 class="center">Lo que dicen en Google</h2>
+            <div class="center">
+                <div class="google-badge" style="justify-content: center; margin-bottom: 20px;">
+                    <i class="fab fa-google" style="color:#4285F4;"></i>
+                    <span style="font-weight:bold; margin-left:5px;">5.0 Estrellas</span>
+                </div>
+                <blockquote style="font-size: 1.2rem; font-style: italic; max-width: 800px; margin: 0 auto;">"Los mejores churros de Torrevieja, sin duda. El chocolate está espectacular y el trato es de 10."</blockquote>
+                <p style="margin-top: 15px; font-weight: bold; color: var(--rojo-crazy);">- Juan Pérez</p>
+            </div>
+        </section>
+    </main>
 
     <footer id="contacto">
         <div class="container footer-grid">
-            <div>
+            <address style="font-style: normal;">
                 <h3>CRAZY CHURRO</h3>
-                <p>C. Félix Rodríguez de la Fuente, 3, Torrevieja, Alicante</p>
-                <p>Tel: 622 219 321 </p>
-            </div>
+                <p>C. Félix Rodríguez de la Fuente, 3<br>03182 Torrevieja, Alicante</p>
+                <p>Tel: <a href="tel:622219321" style="color:white;">622 219 321</a></p>
+            </address>
             <div>
                 <h3>Horario</h3>
                 <p>Lunes a Domingo</p>
-                <p>07:00 - 13:00</p>
+                <p>07:30 - 00:00</p>
             </div>
         </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">© <span id="year"></span> Crazy Churro. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
