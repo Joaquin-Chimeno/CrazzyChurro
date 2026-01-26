@@ -1,0 +1,296 @@
+
+:root {
+    --rojo-crazzy: #e63946;
+    --amarillo-crazzy: #ffbd00;
+    --negro-elegante: #1a1a1a;
+    --blanco-puro: #ffffff;
+    --gris-suave: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* para que los tamaños no se rompan */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--negro-elegante);
+    background-color: var(--blanco-puro);
+    line-height: 1.6;
+}
+
+
+header {
+    background: var(--blanco-puro);
+    padding: 15px 0;
+    border-bottom: 3px solid var(--rojo-crazzy); /* Línea roja estilo Crazzy */
+    position: sticky; /* Se queda fijo al bajar */
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* ------------ESTO PONE TODO EN FILA---------------*/
+    justify-content: space-between; /* Separa Logo - Menú - Botón */
+    align-items: center; /* lo centra verticalmente */
+}
+
+
+/* Contenedor principal del logo (ahora es un enlace <a>) */
+.logo-container {
+    display: flex;          /* Esto pone la foto y el texto en fila horizontal */
+    align-items: center;    /* Esto los centra verticalmente (que no quede uno más arriba que otro) */
+    text-decoration: none;  /* Quita el subrayado típico de los enlaces */
+    gap: 10px;              /* Espacio de separación entre la foto y el texto */
+}
+
+/* Controlamos el tamaño de la imagen */
+.logo-img {
+    height: 50px;           /* Altura fija, el ancho se ajusta solo */
+    width: auto;            /* Mantiene la proporción para que no se deforme */
+    object-fit: contain;    /* Asegura que se vea entera */
+}
+
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--negro-elegante);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 1;         /* Evita espacios extra arriba y abajo del texto */
+}
+
+.logo-text span {
+    color: var(--rojo-crazzy);
+}
+
+
+.nav-links {
+    display: flex; /* Pone los links en fila */
+    list-style: none; /* Quita los puntos negros */
+    gap: 25px; /* Espacio entre palabras */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--negro-elegante);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--rojo-crazzy);
+}
+
+/* eSTE ES EL BOTON PARA LLAMAR*/
+.nav-btn {
+    background-color: var(--rojo-crazzy);
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    white-space: nowrap; /* Evita que el texto del botón se parta */
+}
+
+.nav-btn:hover {
+    background-color: var(--negro-elegante);
+    transform: scale(1.05);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--gris-suave);
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x1000'); /* Cambia esto por tu foto real */
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem); /* Se adapta al tamaño de pantalla */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--rojo-crazzy);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    border: 2px solid var(--rojo-crazzy);
+    margin-top: 20px;
+}
+
+.btn-cta:hover {
+    background-color: transparent;
+    color: var(--rojo-crazzy);
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+}
+
+
+h2 {
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: var(--negro-elegante);
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--amarillo-crazzy);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.split {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.split .text { flex: 1; }
+.split .image { flex: 1; }
+.split img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    color: var(--rojo-crazzy);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+
+.grid-carta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--negro-elegante);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+
+header.header-active {
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 
+   RESPONSIVE PARA EL MÓVIL
+   */
+@media (max-width: 768px) {
+    nav.container {
+        flex-direction: column; /* En móvil se pone vertical */
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap; /* Si no caben, bajan */
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    .split {
+        flex-direction: column; /* Texto arriba, foto abajo */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
