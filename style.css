@@ -1,5 +1,4 @@
 :root {
-    /* CORREGIDO: Nombres de variables con 'crazy' (1 z) */
     --rojo-crazy: #e63946;
     --amarillo-crazy: #ffbd00;
     --negro-elegante: #1a1a1a;
@@ -24,7 +23,7 @@ body {
 header {
     background: var(--blanco-puro);
     padding: 15px 0;
-    border-bottom: 3px solid var(--rojo-crazy); /* Variable corregida */
+    border-bottom: 3px solid var(--rojo-crazy);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -65,6 +64,7 @@ nav.container {
 
 .logo-text span { color: var(--rojo-crazy); }
 
+/* AQUÍ ESTABA EL ERROR DEL MENÚ: Usamos .nav-links */
 .nav-links { display: flex; list-style: none; gap: 25px; }
 
 .nav-links a {
@@ -102,7 +102,8 @@ nav.container {
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/FotoLocal.jpg'); 
+    /* CORREGIDO: Puse el nombre en minúsculas. Renombra tu archivo a 'fotolocal.jpg' */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/fotolocal.jpg'); 
     background-size: cover;
     background-position: center;
     height: 85vh;
