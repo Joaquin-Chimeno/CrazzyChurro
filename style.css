@@ -45,15 +45,32 @@ nav.container {
 }
 
 /* El Logo */
-.logo {
+/* Contenedor principal del logo (ahora es un enlace <a>) */
+.logo-container {
+    display: flex;          /* Esto pone la foto y el texto en fila horizontal */
+    align-items: center;    /* Esto los centra verticalmente (que no quede uno más arriba que otro) */
+    text-decoration: none;  /* Quita el subrayado típico de los enlaces */
+    gap: 10px;              /* Espacio de separación entre la foto y el texto */
+}
+
+/* Controlamos el tamaño de la imagen */
+.logo-img {
+    height: 50px;           /* Altura fija, el ancho se ajusta solo */
+    width: auto;            /* Mantiene la proporción para que no se deforme */
+    object-fit: contain;    /* Asegura que se vea entera */
+}
+
+/* Estilo del texto */
+.logo-text {
     font-size: 26px;
     font-weight: 800;
     color: var(--negro-elegante);
     letter-spacing: -1px;
     text-transform: uppercase;
+    line-height: 1;         /* Evita espacios extra arriba y abajo del texto */
 }
 
-.logo span {
+.logo-text span {
     color: var(--rojo-crazzy);
 }
 
