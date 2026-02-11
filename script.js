@@ -19,7 +19,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('section, article.item, .review-card').forEach(el => {
+document.querySelectorAll('section, article.item, .review-card, .caja-contacto').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
